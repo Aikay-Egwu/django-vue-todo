@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <title>TODO</title>
+</head>
+<body class="bg-gray-200">
+  
+  <div class="w-1/2 mx-auto mt-6">
+    {% block content %}
+
+      
+      {% endblock %}
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
